@@ -1,11 +1,24 @@
 # NOTE: this is NOT intended to be run as a script!
 #
-# explanation: steps I follow when installing ubuntu onto a computer
+# explanation: steps I follow when installing ubuntu on either my macbook pro
+#              or my (non-mac) desktop.
 #
+
+#### partition settings ####
+#currently just use defaults
+
+
+#### system backups #### 
+#install timeshift and take snapshot of the system
+sudo apt-add-repository -y ppa:teejee2008/ppa
+sudo apt-get update
+sudo apt-get install timeshift
+#take "fresh install" snapshot of the system
+
 
 #### wireless ####
 #if wireless isn't already working, appropriate fix will depend on your card
-#fix for BCM4331 (rev 02) (tried on 2011 mbp, 2012/4 mba):
+#fix for BCM4331 (rev 02) (on mbp 8.1):
 sudo apt-get install bcmwl-kernel-source
 
 #fix for BCM4306 (rev 03) (card in MY desktop):
@@ -41,6 +54,11 @@ sudo apt-get install dconf-tools
 #switch-group               '<Control>Above_Tab'
 #switch-applications        '<Control>Tab'
 #######
+
+#### make terminal easier to use ####
+#open terminal, edit->keyboard shortcuts..
+#remove shift from the shortcuts, eg. make copy 'ctrl c'
+#note: above we binded 'ctrl c' to 'cmd c' on a mac keyboard
 
 
 #### back up sudoers file ####
