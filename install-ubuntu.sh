@@ -26,6 +26,8 @@ sudo nano /usr/share/themes/Ambiance/metacity-1/metacity-theme-1.xml
 #### mac keyboard specific ####
 ## switching ctrl & cmd key bindings ##
 #move .Xmodmap to /home/nick/.Xmodmap
+# .Xmodmap should be in the Install-Guides repo
+# see also https://askubuntu.com/questions/131900/how-do-i-switch-the-command-key-and-control-key-on-a-macbook-pro
 
 #prevent switched keybindings from resetting
 gsettings set org.gnome.settings-daemon.plugins.keyboard active false
