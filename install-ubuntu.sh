@@ -17,6 +17,12 @@ sudo modpobe b43
 #install gnome classic then login using 'gnome classic (metacity)'
 sudo apt-get install gnome-session-fallback
 
+sudo apt-get install light-themes
+
+#gsettings set org.gnome.desktop.interface gtk-theme Ambiance
+gsettings set org.gnome.desktop.interface gtk-theme Yaru-dark
+gsettings set org.gnome.desktop.interface icon-theme ubuntu-mono-dark
+
 #change width of window borders 
 sudo nano /usr/share/themes/Ambiance/metacity-1/metacity-theme-1.xml
 	# <distance name="left_width" value="3"/>
@@ -38,7 +44,7 @@ xmodmap /home/nick/.Xmodmap
 #add startup progam "cmd ctrl switcher" "/usr/bin/xmodmap /home/nick/.Xmodmap"
 
 #change keybindings for changing windows
-sudo apt-get install dconf-tools 
+sudo apt-get install dconf-editor 
 #nav to org/gnome/desktop/wm/keybindings
 #switch-group               '<Control>Above_Tab'
 #switch-applications        '<Control>Tab'
@@ -69,11 +75,6 @@ sudo apt-get install build-essential
 sudo apt-get install libboost-all-dev
 #sudo apt-get install libgmp3-dev libgmp10-doc libmpfr-dev
 sudo apt-get install linux-headers-$(uname -r)
-sudo apt-get install libwxgtk2.8-0
-sudo apt-get install libwxgtk2.8-dev
-sudo apt-get install codeblocks
-sudo apt-get install codeblocks-dbg   
-	#need plugin liboccurrenceshighlighting.so for selected-highlighting
 
 sudo apt-get install ktorrent
 sudo apt-get install pidgin
@@ -88,13 +89,6 @@ mkdir /home/nick/Repositories
 sudo apt-get install texlive-full       #takes a few hours
 sudo apt-get install texlive-latex-extra
 sudo apt-get install texstudio
-sudo apt-get install jabref
-sudo apt-get install latexdraw
-
-#setup scripts/services
-#setup /usr/local/bin/notify-user
-#setup /usr/local/bin/hdmi-sound-toggle
-#setup /etc/network/if-up.d/dropbox-toggle
 
 
 #### fixing bookmarks ####
@@ -106,9 +100,6 @@ sudo nano ~/.config/gtk-3.0/bookmarks
 	file:///home/nick/Pictures
 	file:///home/nick/Repositories
 	file:///home/nick/Videos
-
-
-#Take "complete install" snapshot of the system
 
 
 #### more information ####
