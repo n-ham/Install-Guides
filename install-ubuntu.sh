@@ -81,6 +81,12 @@ sudo apt-get install pidgin
 sudo apt-get install vlc
 sudo apt-get install nautilus-dropbox
 
+sudo apt-get install pinta
+sudo apt-get install gimp
+sudo apt-get install libopencv-dev
+
+sudo snap install sublime-text --classic
+
 sudo apt-get install git
 git config --global user.name "username"
 git config --global user.email "email address"
